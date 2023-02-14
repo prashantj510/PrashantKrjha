@@ -1,0 +1,121 @@
+.Home {
+    /* position: absolute;
+   left: 50%;
+   top: 50%; */
+    margin: 15px;
+    width: 80%;
+    height: 250px;
+}
+
+.card {
+    width: 450px;
+    height: 70vh;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.card-inner {
+    width: inherit;
+    height: inherit;
+    background: rgba(255, 255, 255, .05);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+}
+
+.card:hover {
+    -webkit-transform: scale(1.04) rotate(1deg);
+    -ms-transform: scale(1.04) rotate(1deg);
+    transform: scale(1.04) rotate(1deg);
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(#b0e633, #53ef7d);
+    border-radius: 50%;
+    position: absolute;
+    animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+.circle:nth-child(1) {
+    top: -25px;
+    left: -25px;
+}
+
+.circle:nth-child(2) {
+    bottom: -25px;
+    right: -25px;
+    -webkit-animation-name: move-down1;
+    animation-name: move-down1;
+}
+
+@-webkit-keyframes move-up6 {
+    to {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes move-up6 {
+    to {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+@-webkit-keyframes move-down1 {
+    to {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+}
+
+@keyframes move-down1 {
+    to {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+}
+
+.Profile-Pic {
+    display: flex;
+}
+
+.Pic {
+    /* position: absolute;
+    height: 100px;
+    width: 50px; */
+    margin: 20px 15px;
+}
+
+.Pic1 {
+    position: relative;
+    width: 120px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(119, 113, 113, 0.65);
+}
+
+.card-inner h1 {
+    font-size: 45px;
+    background: -webkit-linear-gradient(#eee9e9, #9a9b9c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px 5px;
+    padding: 2px 15px;
+    letter-spacing: 1px;
+    text-shadow: 0px 2px 8px rgba(119, 113, 113, 0.65);
+    /* position: relative; */
+    /* text-align:; */
+}
+
+.card-inner h2 {
+    color: mediumslateblue;
+    text-shadow: 0px 2px 8px rgba(119, 113, 113, 0.65);
+    margin: 10px 10px;
+}
