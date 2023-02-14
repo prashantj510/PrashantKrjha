@@ -8,7 +8,7 @@
  
  function updateBody(){
      if (inputEl.checked){
-         bodyEl.style.background="#212121";
+         bodyEl.style.background="#000000";
      }else{
          bodyEl.style.background="#303049";
      }
